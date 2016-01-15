@@ -1,8 +1,7 @@
 deps:
 	wget https://github.com/nanomsg/nanomsg/releases/download/0.8-beta/nanomsg-0.8-beta.tar.gz
 	tar -xvzf nanomsg-0.8-beta.tar.gz
-	cd nanomsg-0.8-beta && ./configure && make && sudo make install
-	sudo ldconfig
+	cd nanomsg-0.8-beta && ./configure && make
 
 clean:
 	rm -rf target
